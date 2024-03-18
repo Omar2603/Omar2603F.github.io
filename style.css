@@ -1,4 +1,3 @@
-/* Updated CSS with theme color #009688 and white */
 body, html {
     margin: 0;
     padding: 0;
@@ -14,7 +13,7 @@ body, html {
     padding: 10px 0;
     position: sticky;
     top: 0;
-    background-color: #009688; /* Theme color */
+    background-color: #009688;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     z-index: 1000;
     border-radius: 15px;
@@ -25,15 +24,15 @@ body, html {
 .navbar a {
     text-decoration: none;
     margin: 0 10px;
-    color: #fff; /* White text */
+    color: #fff;
     padding: 8px 16px;
     border-radius: 10px;
     transition: background-color 0.3s;
 }
 
 .navbar a:hover, .navbar a.active {
-    background-color: #00796B; /* Darker shade for hover state */
-    color: #fff; /* White text */
+    background-color: #00796B;
+    color: #fff;
 }
 
 .main-content {
@@ -46,12 +45,12 @@ body, html {
 }
 
 .name-position-container {
-    margin-top: -20vh; /* Adjust this value to raise or lower the name and position */
+    margin-top: -20vh;
 }
 
 h1, .title {
     margin: 0;
-    color: #009688; /* Theme color */
+    color: #009688;
 }
 
 h1 {
@@ -74,10 +73,9 @@ h1 {
     height: 50px;
 }
 
-/* Section styles */
 section {
     padding: 40px 20px;
-    border-top: 4px solid #009688; /* Theme color border */
+    border-top: 4px solid #009688;
 }
 
 #education {
@@ -91,7 +89,7 @@ section {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-    align-items: stretch; /* Add this to align the height of flex children */
+    align-items: stretch;
 }
 
 .education-card {
@@ -99,8 +97,8 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    margin: 5px; /* This margin can affect the actual width, make sure there is enough room for two cards */
-    flex-basis: calc(33% - 30px); /* Adjusted the flex-basis to account for margin and gap */
+    margin: 5px;
+    flex-basis: calc(33% - 30px);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -117,8 +115,8 @@ section {
 .education-card img {
     max-width: 100%;
     height: 200px;
-    border-top-left-radius: 10px; /* Round the top left corner of the image */
-    border-top-right-radius: 10px; /* Round the top right corner of the image */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .education-card h3 {
@@ -138,50 +136,43 @@ section {
 .education-card ul {
     font-size: 0.9em;
     color: #666;
-    list-style-type: none; /* Removes default list styling */
-    padding: 0; /* Removes default padding */
+    list-style-type: none;
+    padding: 0;
     margin-top: auto;
 }
 
 .education-card ul li::before {
     content: '•';
-    color: #009688; /* Theme color for bullet points */
+    color: #009688;
     font-weight: bold;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
 }
 
-
-
-/* Resume button styles */
 .resume-button {
     text-decoration: none;
     margin: 0 10px;
-    color: #fff; /* White text */
+    color: #fff;
     border-radius: 10px;
-    background-color: #009688; /* Theme color */
+    background-color: #009688;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     border: none;
     transition: background-color 0.3s;
     cursor: pointer;
     font-family: 'Arial', sans-serif;
-    padding: 12px 24px; /* Larger padding for "View Resume" button */
-    font-size: 1.2em; /* Larger font size for "View Resume" button */
+    padding: 12px 24px;
+    font-size: 1.2em;
 }
 
 .resume-button:hover {
-    background-color: #00796B; /* Darker shade for hover state */
+    background-color: #00796B;
 }
 
-/* Avoid content going under the fixed navbar */
 body {
     padding-top: 70px;
 }
 
-
-
-/* ... existing styles ... */
 
 #experience {
     background-color: #fff;
@@ -190,13 +181,13 @@ body {
 
 .work-experience-entry {
     margin-bottom: 30px;
-    border-left: 4px solid #009688; /* Theme color border */
+    border-left: 4px solid #009688;
     padding-left: 15px;
 }
 
 .work-experience-entry h3 {
     font-size: 1.5em;
-    color: #009688; /* Theme color */
+    color: #009688;
     margin-top: 0;
 }
 
@@ -209,15 +200,13 @@ body {
 .work-experience-entry p {
     font-size: 1em;
     margin-top: 0;
-    color: #333; /* Default text color */
+    color: #333;
 }
-
-/* ... additional styles ... */
 
 #skills {
     text-align: center;
     padding: 40px 20px;
-    background-color: #f9f9f9; /* Light background for the skills section */
+    background-color: #f9f9f9;
 }
 
 #skills h2 {
@@ -228,7 +217,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px; /* Creates space between the skill tags */
+    gap: 10px;
 }
 
 .skill-tag {
@@ -236,34 +225,34 @@ body {
     display: inline-block;
     margin: 5px;
     padding: 8px 16px;
-    border: 1px solid #ccc; /* You can change this color if needed */
+    border: 1px solid #ccc;
     border-radius: 4px;
     cursor: pointer;
-    background-color: #fff; /* Initial background color */
-    transition: background-color 0.3s, color 0.3; /* Smooth transition for background color */
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3;
 }
 
 .skill-tag:hover {
-    background-color: #009688; /* New background color when hovering */
-    color: #fff; /* Change text color when hovering */
+    background-color: #009688;
+    color: #fff;
 }
 
 .skill-tooltip {
     visibility: hidden;
     opacity: 0;
-    width: auto; /* Let it grow as needed */
+    width: auto;
     background-color: #009688;
     color: #fff;
     text-align: center;
     border-radius: 4px;
-    padding: 5px 10px; /* Some padding on sides */
+    padding: 5px 10px;
     position: absolute;
     z-index: 1;
     bottom: 150%;
     left: 50%;
-    transform: translateX(-50%); /* Centrally align tooltip */
-    white-space: nowrap; /* Keep tooltip on a single line */
-    transition: opacity 0.3s; /* Fade and move up on hover */
+    transform: translateX(-50%);
+    white-space: nowrap;
+    transition: opacity 0.3s;
 }
 
 .skill-tag:hover .skill-tooltip {
@@ -272,22 +261,21 @@ body {
 }
 
 .education-entry {
-    background-color: #f5f5f5; /* Light grey background */
-    border-radius: 8px; /* Rounded edges */
-    padding: 20px; /* Padding inside the box */
-    margin-bottom: 20px; /* Space between entries */
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-/* Add this to maintain the overall layout */
 #education-section {
     padding: 20px;
 }
 
 .work-experience-entry {
-    background-color: #f5f5f5; /* Light grey background */
-    border-radius: 8px; /* Rounded edges */
-    padding: 20px; /* Padding inside the box */
-    margin-bottom: 20px; /* Space between entries */
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .experience-dates {
@@ -295,28 +283,26 @@ body {
     margin-bottom: 10px;
 }
 
-/* Make sure this section is in your stylesheet */
 #experience {
     padding: 20px;
 }
 
 .about-me-entry {
-    background-color: #f5f5f5; /* Light grey background */
-    border-radius: 8px; /* Rounded edges */
-    padding: 20px; /* Padding inside the box */
-    margin-bottom: 20px; /* Space between entries */
-    overflow: auto; /* Clear the float */
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: auto;
 }
 
 .about-me-entry img.about-image {
-    float: left; /* Float the image to the left */
-    margin-right: 20px; /* Add space between the image and the text */
-    width: 200px; /* Width of the image */
-    height: auto; /* Height is set to auto to maintain aspect ratio */
-    border-radius: 4px; /* Optional: if you want rounded corners on the image */
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
 }
 
-/* Make sure this section is in your stylesheet */
 #about {
     padding: 20px;
 }
@@ -324,7 +310,7 @@ body {
 #footer footer {
     text-align: center;
     padding: 20px;
-    background-color: #333; /* Adjust the color to match your site's design */
+    background-color: #333;
     color: #fff;
 }
 
@@ -338,8 +324,8 @@ body {
 }
 
 #footer .social-links img {
-    width: 24px; /* Adjust size as needed */
-    height: 24px; /* Adjust size as needed */
+    width: 24px;
+    height: 24px;
     vertical-align: middle;
 }
 
