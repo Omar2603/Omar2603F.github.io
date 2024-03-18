@@ -89,8 +89,9 @@ section {
 .education-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px; /* Adjust the gap as needed */
-    justify-content: center; /* This will center the cards within the container */
+    gap: 15px;
+    justify-content: center;
+    align-items: stretch; /* Add this to align the height of flex children */
 }
 
 .education-card {
@@ -115,7 +116,7 @@ section {
 
 .education-card img {
     max-width: 100%;
-    height: auto;
+    height: 200px;
     border-top-left-radius: 10px; /* Round the top left corner of the image */
     border-top-right-radius: 10px; /* Round the top right corner of the image */
 }
@@ -127,15 +128,19 @@ section {
 
 .degree {
     font-weight: bold;
+    margin-top: auto;
 }
 
-.details,
+.details {
+    margin-top: auto;
+}
+
 .education-card ul {
     font-size: 0.9em;
     color: #666;
     list-style-type: none; /* Removes default list styling */
     padding: 0; /* Removes default padding */
-    margin-top: 10px;
+    margin-top: auto;
 }
 
 .education-card ul li::before {
