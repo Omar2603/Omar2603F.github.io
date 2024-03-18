@@ -305,9 +305,45 @@ body {
     border-radius: 8px; /* Rounded edges */
     padding: 20px; /* Padding inside the box */
     margin-bottom: 20px; /* Space between entries */
+    overflow: auto; /* Clear the float */
+}
+
+.about-me-entry img.about-image {
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Add space between the image and the text */
+    width: 200px; /* Width of the image */
+    height: auto; /* Height is set to auto to maintain aspect ratio */
+    border-radius: 4px; /* Optional: if you want rounded corners on the image */
 }
 
 /* Make sure this section is in your stylesheet */
 #about {
     padding: 20px;
+}
+
+#footer footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Adjust the color to match your site's design */
+    color: #fff;
+}
+
+#footer .social-links {
+    margin-bottom: 20px;
+}
+
+#footer .social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#footer .social-links img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    vertical-align: middle;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 0.8em;
 }
