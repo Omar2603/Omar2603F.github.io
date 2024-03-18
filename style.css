@@ -81,24 +81,43 @@ section {
 }
 
 #education {
-    background-color: #f9f9f9; /* Light grey background for the entire section */
-    padding: 40px 0;
+    background-color: #f9f9f9;
+    padding: 20px 0;
     text-align: center;
 }
 
 .education-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Allows cards to wrap on small screens */
-    gap: 20px; /* Space between cards */
+    flex-wrap: wrap;
+    gap: 15px; /* Adjust the gap as needed */
+    justify-content: center; /* This will center the cards within the container */
 }
 
 .education-card {
-    background-color: #fff; /* White background for cards */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 20px;
-    width: 300px; /* Fixed width, can be changed as per requirement */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 5px; /* This margin can affect the actual width, make sure there is enough room for two cards */
+    flex-basis: calc(33% - 30px); /* Adjusted the flex-basis to account for margin and gap */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.education-image {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: auto;
+    display: block;
+}
+
+.education-card img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 10px; /* Round the top left corner of the image */
+    border-top-right-radius: 10px; /* Round the top right corner of the image */
 }
 
 .education-card h3 {
