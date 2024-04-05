@@ -18,6 +18,18 @@ body{
     box-sizing: border-box;
 }
 
+section > h2 {
+    text-align: center;
+}
+
+.about-me-entry h2, .work-experience-entry h2, .education-card h3, .skill-tag h3 {
+    text-align: center;
+}
+
+section > h3 {
+    text-align: center;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
