@@ -1,9 +1,21 @@
-body, html {
+html {
+    font-size: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
     background-color: #fff;
     color: #333;
+}
+
+body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    padding-top: 4.375rem;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -331,4 +343,78 @@ body {
 #footer p {
     margin: 0;
     font-size: 0.8em;
+}
+@media (max-width: 768px) {
+    
+    *, *:before, *:after {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .navbar a {
+        padding: 8px 12px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .main-content, .education-container, .skills-wrapper {
+        flex-direction: column;
+    }
+
+
+    h1 {
+        font-size: 2.5em;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+    }
+
+    
+    .name-position-container {
+        margin-top: -20px;
+        padding-top: 0;
+    }
+
+    .resume-button {
+        padding: 10px 15px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        width: auto;
+        max-width: 90%;
+        box-sizing: border-box;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .education-card, .work-experience-entry, .about-me-entry {
+        flex-basis: 100%;
+    }
+
+    .education-card img, .about-me-entry img.about-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar a {
+        padding: 8px 12px;
+        display: block;
+        width: auto;
+        margin: 10px auto;
+    }
+
+    body {
+        padding-top: 60px;
+    }
+
+    .scroll-arrow {
+        width: 40px;
+        height: 40px;
+    }
 }
