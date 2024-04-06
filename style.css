@@ -278,7 +278,7 @@ body {
 }
 .skill-tag:hover .skill-tooltip,
 .skill-tag.active .skill-tooltip {
-    display: block; /* Show tooltips on hover or when active class is added */
+    display: block;
     opacity: 1;
     visibility: visible;
     transition-delay: 0s;
