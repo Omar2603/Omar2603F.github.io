@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-
     var navLinks = document.querySelectorAll('.navbar a');
-  
-    document.getElementById('scroll-to-about').addEventListener('click', function() {
+
+    document.getElementById('scroll-to-about').addEventListener('click', function () {
         document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
     });
-    
+
     function removeActiveClasses() {
         navLinks.forEach(function (link) {
             link.classList.remove('active');
@@ -33,41 +32,38 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-
     var contactform = document.querySelector('form');
-    contactform.addEventListener('submit', function(event){
+    contactform.addEventListener('submit', function (event) {
         event.preventDefault();
-        alert("Information submitterd");
-
+        alert("Information submitted");
         contactform.reset();
-        
     });
-    
-  document.querySelectorAll('.skill-tag').forEach(function(tag) {
-    var tooltip = tag.querySelector('.skill-tooltip');
 
-    function toggleTooltip() {
-       
-        document.querySelectorAll('.skill-tooltip').forEach(function(otherTooltip) {
-            if (otherTooltip !== tooltip) {
-                otherTooltip.style.visibility = 'hidden';
-                otherTooltip.style.opacity = 0;
-            }
+
+    document.querySelectorAll('.skill-tag').forEach(function (tag) {
+        tag.addEventListener('click', function () {
+            this.classList.toggle('active');
         });
 
-      
-        if (tooltip.style.visibility === 'visible') {
-            tooltip.style.visibility = 'hidden';
-            tooltip.style.opacity = 0;
-        } else {
-            tooltip.style.visibility = 'visible';
-            tooltip.style.opacity = 1;
+        tag.addEventListener('touchstart', function (event) {
+            event.preventDefault();
+            this.classList.toggle('active');
+        });
+    });
+
+
+    document.addEventListener('click', function (e) {
+        if (!e.target.matches('.skill-tag')) {
+            document.querySelectorAll('.skill-tag').forEach(function (tag) {
+                tag.classList.remove('active');
+            });
         }
-    }
+    });
 
-   
-    tag.addEventListener('click', toggleTooltip);
-    tag.addEventListener('touchstart', toggleTooltip);
-});
 
+    document.querySelectorAll('.skill-tag').forEach(function (tag) {
+        tag.addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
+    });
 });
