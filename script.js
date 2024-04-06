@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 activeLink.classList.add('active');
             }
         });
-
         section.addEventListener('mouseleave', function () {
             removeActiveClasses();
         });
@@ -39,14 +38,17 @@ document.addEventListener('DOMContentLoaded', function () {
         contactform.reset();
     });
 
-
     document.querySelectorAll('.skill-tag').forEach(function (tag) {
         tag.addEventListener('click', function (e) {
-            e.stopPropagation();
-            this.classList.toggle('active');
+            document.querySelectorAll('.skill-tag.active').forEach(function (activeTag) {
+                if (activeTag !== tag) {
+                    activeTag.classList.remove('active');
+                }
+            });
+            tag.classList.toggle('active');
+            e.stopPropagation(); 
         });
     });
-
 
     document.addEventListener('click', function () {
         document.querySelectorAll('.skill-tag.active').forEach(function (tag) {

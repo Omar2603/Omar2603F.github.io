@@ -47,7 +47,6 @@ section > h3 {
     max-width: fit-content;
 }
 
-
 .navbar a {
     text-decoration: none;
     margin: 0 10px;
@@ -446,113 +445,76 @@ body {
 }
 
 @media (max-width: 768px) {
-    
     *, *:before, *:after {
         box-sizing: border-box;
-        max-width: 100%;
     }
 
     .navbar {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px;
+        flex-direction: column; 
+        padding: 10px 0;
     }
 
     .navbar a {
         padding: 8px 12px;
-        margin: 5px;
-        text-align: center;
+        margin: 5px auto;
     }
 
     .main-content, .education-container, .skills-wrapper {
         flex-direction: column;
     }
 
-
     h1 {
-        font-size: 2.5em;
-        margin-top: 0;
-        margin-bottom: 0.5em;
+        font-size: 3em;
     }
 
-    
     .name-position-container {
-        margin-top: -20px;
-        padding-top: 0;
+        margin-top: -10vh;
     }
 
     .resume-button {
         padding: 10px 15px;
-        margin-top: 0;
-        margin-bottom: 10px;
-        width: auto;
-        max-width: 90%;
-        box-sizing: border-box;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        width: 80%; 
     }
 
     .education-card, .work-experience-entry, .about-me-entry {
-        flex-basis: 100%;
+        width: 90%; 
+        margin: 0 auto; 
     }
 
     .education-card img, .about-me-entry img.about-image {
         width: 100%;
-        height: auto;
     }
 
-    .navbar a {
-        padding: 8px 12px;
-        display: block;
-        width: auto;
-        margin: 10px auto;
-    }
-
-    body {
-        padding-top: 60px;
+    .about-me-entry p, .about-me-entry h2, .work-experience-entry p, .education-card h3 {
+        font-size: 1rem; 
     }
 
     .scroll-arrow {
-        width: 40px;
-        height: 40px;
+        width: 30px; 
+        height: 30px;
     }
 
-    .contact-form input[type="text"],
-
-    .contact-form input[type="email"],
-
-    .contact-form textarea,
-    
-    .contact-form button {
-        width: auto;
-        margin: 10px;
+    .contact-form input, .contact-form textarea, .contact-form button {
+        margin: 0 auto; 
+        width: calc(100% - 20px); 
     }
 }
 
 @media (max-width: 576px) {
-    h1, .title{
-        font-size: 2em;
+    h1, .title {
+        font-size: 2.5em; 
     }
 
-    section> h2, .about-me-entry h2, .work-experience-entry h2, .education-card h3, .skill-tag {
-        font-size: 1.25em;
+    .about-me-entry, .work-experience-entry, .education-card {
+        padding: 15px;
     }
 
     .navbar a {
         padding: 8px 10px;
-        font-size: 0.9rem;
+        font-size: 1rem; 
     }
 
-    .contact-form label, .contact-form input[type="text"],
-    .contact-form input[type="email"], .contact-form textarea, .contact-form button {
-        font-size: 0.9rem;
-    }
-
-
-* {
-    max-width: 100%;
-    overflow-x: hidden;
+    .about-me-entry p, .work-experience-entry p {
+        font-size: 0.9rem; 
     }
 }
