@@ -33,9 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var contactform = document.querySelector('form');
     contactform.addEventListener('submit', function (event) {
-        event.preventDefault();
         alert("Information submitted");
-        contactform.reset();
     });
 
     document.querySelectorAll('.skill-tag').forEach(function (tag) {
