@@ -467,10 +467,6 @@ body {
         flex-direction: column;
     }
 
-    h1 {
-        font-size: 3em;
-    }
-
     .name-position-container {
         margin-top: -10vh;
     }
@@ -502,11 +498,32 @@ body {
         margin: 0 auto; 
         width: calc(100% - 20px); 
     }
+
+    h1, .title {
+        font-size: 6vw;
+    }
+
+    .resume-button {
+        width: 60vw;
+        padding:1.5vw;
+        font-size: 3.5vw;
+    }
+
+    .name-position-container h1, .title {
+        font-size: min(max(24px, 4vw), 32px);
+    }
+
+    .resume-button {
+        width: min(max(150px, 50vw), 200px);
+        padding: min(max(10px, 1.5vw), 15px);
+        font-size: min(max(10px, 1.5vw), 14px);
+    }
+
 }
 
 @media (max-width: 576px) {
     h1, .title {
-        font-size: 2.5em; 
+        font-size: 8vw; 
     }
 
     .about-me-entry, .work-experience-entry, .education-card {
@@ -520,5 +537,23 @@ body {
 
     .about-me-entry p, .work-experience-entry p {
         font-size: 0.9rem; 
+    }
+
+
+    .resume-button {
+        width: 70vw; 
+        padding: 4vw; 
+        font-size: 4vw; 
+    }
+
+    
+    .name-position-container h1, .title {
+        font-size: min(max(20px, 5vw), 28px);
+    }
+
+    .resume-button {
+        width: min(max(120px, 60vw), 180px);
+        padding: min(max(8px, 2vw), 12px);
+        font-size: min(max(9px, 2vw), 12px);
     }
 }
