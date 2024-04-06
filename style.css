@@ -261,26 +261,25 @@ body {
 }
 
 .skill-tooltip {
-    visibility: hidden;
+    visibility: hidden; 
     opacity: 0;
-    width: auto;
-    background-color: #009688;
+    position: absolute; 
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    transition: visibility 0s linear 0.3s, opacity 0.3s linear; 
+    background-color: #009688; 
     color: #fff;
     text-align: center;
     border-radius: 4px;
-    padding: 5px 10px;
-    position: absolute;
-    z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    transform: translateX(-50%);
+    padding: 5px 10px; 
     white-space: nowrap;
-    transition: opacity 0.3s;
+    bottom: 100%;
 }
-
 .skill-tag:hover .skill-tooltip {
     visibility: visible;
     opacity: 1;
+    transition-delay: 0s;
 }
 
 .education-entry {
@@ -311,6 +310,7 @@ body {
 }
 
 .about-me-entry {
+    font-size: x-large;
     background-color: #f5f5f5;
     border-radius: 8px;
     padding: 20px;
@@ -357,6 +357,21 @@ body {
     font-size: 0.8em;
 }
 
+#refrences {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.refrence {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #009688;
+    border-radius: 4px;
+
+}
+
 #contact {
     text-align: center;
     display: flex;
@@ -364,6 +379,62 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
+}
+
+.contact-form {
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input[type="text"],
+
+.contact-form input[type="email"],
+
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+#contact button.submit-button {
+    background-color: #009688;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact button.submit-button:hover {
+    background-color: #00796B;
+}
+
+#contact button.reset-button {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#contact button.reset-button:hover {
+    background-color: #bbb;
 }
 
 #contact iframe{
@@ -442,5 +513,42 @@ body {
     .scroll-arrow {
         width: 40px;
         height: 40px;
+    }
+
+    .contact-form input[type="text"],
+
+    .contact-form input[type="email"],
+
+    .contact-form textarea,
+    
+    .contact-form button {
+        width: auto;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1, .title{
+        font-size: 2em;
+    }
+
+    section> h2, .about-me-entry h2, .work-experience-entry h2, .education-card h3, .skill-tag {
+        font-size: 1.25em;
+    }
+
+    .navbar a {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    .contact-form label, .contact-form input[type="text"],
+    .contact-form input[type="email"], .contact-form textarea, .contact-form button {
+        font-size: 0.9rem;
+    }
+
+
+* {
+    max-width: 100%;
+    overflow-x: hidden;
     }
 }

@@ -32,4 +32,42 @@ document.addEventListener('DOMContentLoaded', function () {
             removeActiveClasses();
         });
     });
+
+
+    var contactform = document.querySelector('form');
+    contactform.addEventListener('submit', function(event){
+        event.preventDefault();
+        alert("Information submitterd");
+
+        contactform.reset();
+        
+    });
+    
+  document.querySelectorAll('.skill-tag').forEach(function(tag) {
+    var tooltip = tag.querySelector('.skill-tooltip');
+
+    function toggleTooltip() {
+       
+        document.querySelectorAll('.skill-tooltip').forEach(function(otherTooltip) {
+            if (otherTooltip !== tooltip) {
+                otherTooltip.style.visibility = 'hidden';
+                otherTooltip.style.opacity = 0;
+            }
+        });
+
+      
+        if (tooltip.style.visibility === 'visible') {
+            tooltip.style.visibility = 'hidden';
+            tooltip.style.opacity = 0;
+        } else {
+            tooltip.style.visibility = 'visible';
+            tooltip.style.opacity = 1;
+        }
+    }
+
+   
+    tag.addEventListener('click', toggleTooltip);
+    tag.addEventListener('touchstart', toggleTooltip);
+});
+
 });
