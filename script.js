@@ -41,25 +41,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     document.querySelectorAll('.skill-tag').forEach(function (tag) {
-        tag.addEventListener('click', function () {
-            this.classList.toggle('active');
-        });
-
-        tag.addEventListener('touchstart', function (event) {
-            event.preventDefault();
+        tag.addEventListener('click', function (e) {
+            e.stopPropagation();
             this.classList.toggle('active');
         });
     });
 
 
-    document.addEventListener('click', function (e) {
-        if (!e.target.matches('.skill-tag')) {
-            document.querySelectorAll('.skill-tag').forEach(function (tag) {
-                tag.classList.remove('active');
-            });
-        }
+    document.addEventListener('click', function () {
+        document.querySelectorAll('.skill-tag.active').forEach(function (tag) {
+            tag.classList.remove('active');
+        });
     });
-
 
     document.querySelectorAll('.skill-tag').forEach(function (tag) {
         tag.addEventListener('click', function (e) {

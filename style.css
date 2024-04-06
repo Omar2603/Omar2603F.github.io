@@ -278,7 +278,6 @@ body {
 }
 .skill-tag:hover .skill-tooltip,
 .skill-tag.active .skill-tooltip {
-    display: block;
     opacity: 1;
     visibility: visible;
     transition-delay: 0s;
