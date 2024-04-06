@@ -35,8 +35,10 @@ section > h3 {
     justify-content: center;
     align-items: center;
     padding: 10px 0;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     background-color: #009688;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     z-index: 1000;
@@ -44,6 +46,7 @@ section > h3 {
     margin: 8px auto;
     max-width: fit-content;
 }
+
 
 .navbar a {
     text-decoration: none;
