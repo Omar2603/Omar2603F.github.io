@@ -450,13 +450,17 @@ body {
     }
 
     .navbar {
-        flex-direction: column; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         padding: 10px 0;
     }
 
     .navbar a {
-        padding: 8px 12px;
-        margin: 5px auto;
+        padding: 8px 10px;
+        margin: 2px;
+        text-align: center;
+        font-size: 0.7rem;
     }
 
     .main-content, .education-container, .skills-wrapper {
@@ -510,8 +514,8 @@ body {
     }
 
     .navbar a {
-        padding: 8px 10px;
-        font-size: 1rem; 
+        padding: 6px 8px; 
+        font-size: 0.65rem; 
     }
 
     .about-me-entry p, .work-experience-entry p {
