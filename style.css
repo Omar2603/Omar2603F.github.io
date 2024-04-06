@@ -500,6 +500,13 @@ body {
         width: calc(100% - 20px);
         margin: 10px 0;
     }
+
+    .scroll-arrow {
+        bottom: 20%;
+        width: 40px;
+        height: 40px;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -537,4 +544,12 @@ body {
         padding: min(max(8px, 2vw), 12px);
         font-size: min(max(9px, 2vw), 12px);
     }
+
+    .scroll-arrow {
+        bottom: 20%; 
+        width: 30px; 
+        height: 30px; 
+        
+    }
+
 }
