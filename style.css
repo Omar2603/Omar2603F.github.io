@@ -445,6 +445,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
     *, *:before, *:after {
         box-sizing: border-box;
     }
@@ -460,7 +461,7 @@ body {
         padding: 8px 10px;
         margin: 2px;
         text-align: center;
-        font-size: 0.7rem;
+        font-size: 0.7rem; 
     }
 
     .main-content, .education-container, .skills-wrapper {
@@ -468,57 +469,37 @@ body {
     }
 
     .name-position-container {
-        margin-top: -10vh;
+        margin-top: 5vh;
+    }
+
+    h1, .title {
+        font-size: 5vw;
     }
 
     .resume-button {
-        padding: 10px 15px;
-        width: 80%; 
+        width: 70vw;
+        padding: 2vw;
+        font-size: 3vw;
     }
 
     .education-card, .work-experience-entry, .about-me-entry {
-        width: 90%; 
-        margin: 0 auto; 
+        width: 90%;
+        margin: 0 auto;
     }
 
     .education-card img, .about-me-entry img.about-image {
         width: 100%;
+        height: auto;
     }
 
     .about-me-entry p, .about-me-entry h2, .work-experience-entry p, .education-card h3 {
-        font-size: 1rem; 
-    }
-
-    .scroll-arrow {
-        width: 30px; 
-        height: 30px;
+        font-size: 1rem;
     }
 
     .contact-form input, .contact-form textarea, .contact-form button {
-        margin: 0 auto; 
-        width: calc(100% - 20px); 
+        width: calc(100% - 20px);
+        margin: 10px 0;
     }
-
-    h1, .title {
-        font-size: 6vw;
-    }
-
-    .resume-button {
-        width: 60vw;
-        padding:1.5vw;
-        font-size: 3.5vw;
-    }
-
-    .name-position-container h1, .title {
-        font-size: min(max(24px, 4vw), 32px);
-    }
-
-    .resume-button {
-        width: min(max(150px, 50vw), 200px);
-        padding: min(max(10px, 1.5vw), 15px);
-        font-size: min(max(10px, 1.5vw), 14px);
-    }
-
 }
 
 @media (max-width: 576px) {
