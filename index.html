@@ -33,10 +33,19 @@
         <img id="scroll-to-about" src="617749-200.png" alt="Downward arrow indicating to scroll down for more information" class="scroll-arrow">
     </div>
 
+    <div id="accessibility-options" aria-label="Accessibility-Options">
+        <img src="acess.png" alt="Accessibility Options" id="accessibility-trigger" role="button" aria-haspopup="true" aria-controls="options" style="cursor: pointer;">
+        <div id="options" class="hidden" aria-hidden="true" style="text-align: center;">
+            <button id="increase-font-size" aria-label="Increase-text-size" style="margin: 5px;">Increase text size</button>
+            <button id="decrease-font-size" aria-label="Decrease-text-size" style="margin: 5px;">Decrease text size</button>
+            <button id="toggle-color-theme" aria-label="Toggle-color-theme" style="margin: 5px;">Toggle color theme</button>
+        </div>
+    </div>
+
     <section id="about" aria-labelledby="about-heading">
         <div class="about-me-entry">
             <h2 id="about-heading">About Me</h2>
-            <img src="IMG_8254.JPG" alt="A professional Picture of Omar Abu Awwad" class="about-image">
+            <img src="IMG_9484.jpg" alt="A professional Picture of Omar Abu Awwad" class="about-image">
             <p>
                 Hello, My name is Omar Abu Awwad and I'm currently a Third Year full time <strong><a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/">
                 Busiess Technology Management (BCOMM)</a></strong> Major Student at <strong><a href="https://www.torontomu.ca">Toronto
@@ -133,7 +142,7 @@
 
     <section id="skills" aria-labelledby="skills-heading">
         <h2 id="skills-heading">Skills</h2>
-        <p id="skills-description">The List is filled with skills that I hold</p>
+        <p id="skills-description">The skills that I have gained throughout my professional career, academic career, and hobbies.</p>
         <ul class="skills-wrapper" aria-describedby="skills-description">
             <li class="skill-tag" tabindex="0" aria-describedby="bilingual-tooltip">Bilingual<span id="bilingual-tooltip" class="skill-tooltip">Fluent in multiple languages.</span></li>
             <li class="skill-tag" tabindex="0" aria-describedby="computing-tooltip">Computing Proficient<span id="computing-tooltip" class="skill-tooltip">Highly skilled in computer usage and software.</span></li>

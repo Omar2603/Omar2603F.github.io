@@ -59,4 +59,31 @@ document.addEventListener('DOMContentLoaded', function () {
             e.stopPropagation();
         });
     });
+
+    document.getElementById('accessibility-trigger').addEventListener('click', function() {
+        var options = document.getElementById('options');
+        options.classList.toggle('hidden');
+        options.setAttribute('aria-hidden', options.classList.contains('hidden'));
+    });
+
+    function increaseFontSize() {
+        var style = window.getComputedStyle(document.body, null).getPropertyValue('font-size');
+        var currentSize = parseFloat(style);
+        document.body.style.fontSize = (currentSize + 1) + 'px';
+    }
+    
+    function decreaseFontSize() {
+        var style = window.getComputedStyle(document.body, null).getPropertyValue('font-size');
+        var currentSize = parseFloat(style);
+        document.body.style.fontSize = (currentSize - 1) + 'px';
+    }
+    
+    function toggleColorTheme() {
+        document.body.classList.toggle('high-contrast');
+    }
+
+    document.getElementById('increase-font-size').addEventListener('click', increaseFontSize);
+    document.getElementById('decrease-font-size').addEventListener('click', decreaseFontSize);
+    document.getElementById('toggle-color-theme').addEventListener('click', toggleColorTheme);
+
 });
