@@ -452,16 +452,18 @@ body {
 
     .navbar {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px 0;
+        justify-content: space-around; 
+        align-items: center;
+        flex-wrap: wrap; 
     }
-
+  
     .navbar a {
-        padding: 8px 10px;
+        padding: 5px 1vw; 
+        font-size: 3.5vw;
         margin: 2px;
         text-align: center;
-        font-size: 0.7rem; 
+        white-space: nowrap; 
+        overflow: hidden;
     }
 
     .main-content, .education-container, .skills-wrapper {
@@ -518,9 +520,12 @@ body {
         padding: 15px;
     }
 
+    .navbar {
+        justify-content: center;
+    }
     .navbar a {
-        padding: 6px 8px; 
-        font-size: 0.65rem; 
+        font-size: 5vw; 
+        padding: 3px 1vw;
     }
 
     .about-me-entry p, .work-experience-entry p {
